@@ -1,0 +1,41 @@
+{
+	"build":{
+		"dockerfile": "Dockerfile"
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitLab.gitlab-workflow",
+				"jasonn-porch.gitlab-mr",
+				"eamodio.gitlens",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+
+				"ms-iot.vscode-ros",
+				"ms-vscode.cmake-tools"
+			]
+		}
+	},
+
+	"settings": {
+		"terminal.integrated.defaultProfile.*": "/ros_entrypoint.sh /bin/bash"
+	},
+
+	"runArgs": [
+		// UNCOMMENT for Podman
+		// "--userns=keep-id",
+
+		"-e", "DISPLAY=${env:DISPLAY}",
+		"-e", "QT_GRAPHICSSYSTEM=native",
+
+		"-v", "/tmp/.X11-unix/:/tmp/.X11-unix/",
+		"-v", "${env:HOME}/.Xauthority:/home/rosuser/.Xauthority",
+
+		"--device", "/dev/snd",
+
+		"--network", "host"
+	],
+
+	"remoteUser": "rosuser"
+}
