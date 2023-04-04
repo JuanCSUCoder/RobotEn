@@ -33,6 +33,8 @@
 		"-v", "${env:HOME}/.Xauthority:/home/rosuser/.Xauthority",
 
 		"--device", "/dev/snd",
+		"--device", "/dev/dri",
+		"--gpus", "all",
 
 		"--network", "host"
 	],
