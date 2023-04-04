@@ -41,5 +41,5 @@
         "source=/dev/snd,target=/dev/snd,type=bind,consistency=cached",
         "source=${env:HOME}/.Xauthority,target=/home/rosuser/.Xauthority,type=bind"
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R rosuser /home/ws/"
+    "postCreateCommand": "rosdep update && rosdep install --from-paths src --ignore-src -y && sudo chown -R rosuser /home/ws/"
 }
