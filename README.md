@@ -1,5 +1,8 @@
-# Dev Container ROS Templates
+# RobotEn
+
 ![Logo](./logo.svg)
+
+RobotEn or Robot Environment is a set of ROS DevContainer Templates, that aim to simplify and unify robotics development across Linux Distributions.
 
 ## How To
 
@@ -20,12 +23,12 @@ devcontainer up --workspace-folder .
 ### ROS2 Humble
 
 ```bash
-devcontainer templates apply -t ghcr.io/JuanCSUCoder/ros-devcontainers/humble
+devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/humble
 ```
 
 ### ROS Noetic
 
 ```bash
-devcontainer templates apply -t ghcr.io/JuanCSUCoder/ros-devcontainers/noetic
+devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/noetic
 ```
 
