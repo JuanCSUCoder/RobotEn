@@ -1,6 +1,6 @@
 {
     "id": "noetic",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "name": "ROS Noetic Devcontainer Workspace Template",
     "description": "A template to code robots using ROS Noetic Distribution",
     "documentationUrl": "https://github.com/JuanCSUCoder/ros-devcontainers/tree/main/src/noetic",
