@@ -1,6 +1,7 @@
 {
     "name": "ROS 2 Development Container",
-    // "privileged": true,
+    // COMMENT privileged for Podman
+    "privileged": true,
     "remoteUser": "rosuser",
     "build": {
         "dockerfile": "Dockerfile",
@@ -29,7 +30,7 @@
     },
     "runArgs": [
         // UNCOMMENT for Podman
-        "--userns=keep-id",
+        // "--userns=keep-id",
 
         "--network", "host",
 
