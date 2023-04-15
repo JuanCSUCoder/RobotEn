@@ -13,4 +13,4 @@ A template to code robots using ROS Noetic Distribution
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/JuanCSUCoder/ros-devcontainers/blob/main/src/noetic/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-template.json](https://github.com/JuanCSUCoder/RobotEn/blob/main/src/noetic/devcontainer-template.json).  Add additional notes to a `NOTES.md`._
