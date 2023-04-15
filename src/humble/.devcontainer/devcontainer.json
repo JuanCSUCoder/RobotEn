@@ -36,6 +36,9 @@
 
         "-e", "DISPLAY=${env:DISPLAY}",
 
+        "--group-add", "video",
+        "--group-add", "audio",
+
         "--device", "/dev/snd",
 		"--device", "/dev/dri",
 		"--gpus", "all"
