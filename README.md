@@ -1,4 +1,5 @@
 # Dev Container ROS Templates
+![Logo](./logo.svg)
 
 ## How To
 
