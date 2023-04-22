@@ -37,3 +37,8 @@ devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/humble
 devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/noetic
 ```
 
+### ROS Indigo
+
+```bash
+devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/indigo
+```
