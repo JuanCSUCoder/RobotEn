@@ -21,9 +21,11 @@ RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-moveit
 
 # Install Gazebo
 RUN apt-get update && apt-get install -y lsb-release wget gnupg
-RUN wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
+RUN apt-get update && apt-get install -y ca-certificates
+RUN sed '/DST_Root_CA_X3.crt/d' /etc/ca-certificates.conf > /tmp/cacerts.conf && mv /tmp/cacerts.conf /etc/ca-certificates.conf
+RUN update-ca-certificates --fresh && wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/gazebo-stable.list > /dev/null
-RUN apt-get update && apt-get install -y gz-garden
+RUN apt-get update && apt-get install -y gazebo11
 
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
