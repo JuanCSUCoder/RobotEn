@@ -1,0 +1,13 @@
+{
+    "id": "indigo",
+    "version": "0.1.3",
+    "name": "ROS Indigo Devcontainer Workspace Template",
+    "description": "A template to code robots using ROS Indigo Distribution",
+    "documentationUrl": "https://github.com/JuanCSUCoder/ros-devcontainers/tree/main/src/indigo",
+    "publisher": "Juan Camilo Sánchez Urrego",
+    "licenseURL": "https://github.com/JuanCSUCoder/ros-devcontainers/blob/main/LICENSE",
+    "options": [],
+    "platforms": [
+        "Any"
+    ]
+}
