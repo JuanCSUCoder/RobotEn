@@ -5,7 +5,8 @@
 | Version | Supported          |
 | ------- | ------------------ |
 | Humble v0.1.1   | :heavy_check_mark: |
-| Noetic v0.1.1   | :x:                |
+| Noetic v0.2.1   | :heavy_check_mark: |
+| Indigo v0.2.0   | :heavy_check_mark: |
 
 ## Reporting a Vulnerability
 
