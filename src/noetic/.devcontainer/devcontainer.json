@@ -32,9 +32,12 @@
 		"-v", "/tmp/.X11-unix/:/tmp/.X11-unix/",
 		"-v", "${env:HOME}/.Xauthority:/home/rosuser/.Xauthority",
 
+		"--group-add", "video",
+        "--group-add", "audio",
+
 		"--device", "/dev/snd",
 		"--device", "/dev/dri",
-		"--gpus", "all",
+		// "--gpus", "all",
 
 		"--network", "host"
 	],
