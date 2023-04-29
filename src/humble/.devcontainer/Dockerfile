@@ -18,6 +18,9 @@ ENV SHELL /bin/bash
 
 # Install MoveIt
 RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-moveit
+RUN apt-get update && apt-get install -y python3-colcon-common-extensions python3-colcon-mixin
+# RUN colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+RUN colcon mixin update default
 
 # Install Gazebo
 RUN apt-get update && apt-get install -y lsb-release wget gnupg
