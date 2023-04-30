@@ -28,6 +28,9 @@ RUN apt-get update && apt-get install -y python3-colcon-common-extensions python
 # Install Gazebo
 RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-ros-gz
 
+# Setup CycloneDDS
+RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-rmw-cyclonedds-cpp
+
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
