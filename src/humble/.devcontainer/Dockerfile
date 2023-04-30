@@ -32,6 +32,12 @@ RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-ros-gz
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
 
-# [Optional] Set the default user. Omit if you want to keep the default as root.
+# Configure User
 USER $USERNAME
+RUN echo "source /opt/ros/humble/setup.bash" >> /home/rosuser/.bashrc
+RUN echo "source /home/rosuser/ws/install/setup.bash || echo Workspace not Ready" >> /home/rosuser/.bashrc
+RUN echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> /home/rosuser/.bashrc
+RUN echo "export TURTLEBOT3_MODEL=waffle" >> /home/rosuser/.bashrc
+RUN echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/$ROS_DISTRO/share/turtlebot3_gazebo/models" >> /home/rosuser/.bashrc
+
 CMD ["/bin/bash"]
