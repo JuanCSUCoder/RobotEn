@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-moveit
 RUN apt-get update && apt-get install -y python3-colcon-common-extensions python3-colcon-mixin
 
 # Install Gazebo
-RUN apt-get update && apt-get install -y ros-humble-ros-gz
+RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-ros-gz
 
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
