@@ -9,8 +9,8 @@
             "USERNAME": "rosuser"
         }
     },
-    "workspaceFolder": "/home/ws",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ws,type=bind",
+    "workspaceFolder": "/home/rosuser/ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/rosuser/ws,type=bind",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -19,7 +19,9 @@
                 "twxs.cmake",
                 "donjayamanne.python-extension-pack",
                 "eamodio.gitlens",
-                "ms-iot.vscode-ros"
+                "ms-iot.vscode-ros",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.cmake-tools"
             ]
         }
     },
@@ -36,12 +38,9 @@
 
         "-e", "DISPLAY=${env:DISPLAY}",
 
-        "--group-add", "video",
         "--group-add", "audio",
 
-        "--device", "/dev/snd",
-		"--device", "/dev/dri",
-		// "--gpus", "all"
+        "--device", "/dev/snd"
     ],
     "mounts": [
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
