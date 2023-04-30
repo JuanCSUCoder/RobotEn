@@ -27,8 +27,22 @@ devcontainer up --workspace-folder .
 
 ### ROS2 Humble
 
+#### No GPU
+
 ```bash
-devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/humble
+devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/humble_nogpu
+```
+
+#### AMD GPU
+
+```bash
+devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/humble_amd
+```
+
+#### Nvidia GPU
+
+```bash
+devcontainer templates apply -t ghcr.io/JuanCSUCoder/RobotEn/humble_nvidia
 ```
 
 ### ROS Noetic

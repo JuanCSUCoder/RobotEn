@@ -2,11 +2,13 @@
 
 ## Supported Versions
 
-| Version | Supported          |
-| ------- | ------------------ |
-| Humble v0.1.1   | :heavy_check_mark: |
-| Noetic v0.2.1   | :heavy_check_mark: |
-| Indigo v0.2.0   | :heavy_check_mark: |
+| Version                | Supported          |
+| ---------------------- | ------------------ |
+| Humble AMD v1.0.0      | :heavy_check_mark: |
+| Humble NoGPU v1.0.0    | :heavy_check_mark: |
+| Humble Nvidia v1.0.0   | :x:                |
+| Noetic v0.2.1          | :x:                |
+| Indigo v0.2.0          | :x:                |
 
 ## Reporting a Vulnerability
 
