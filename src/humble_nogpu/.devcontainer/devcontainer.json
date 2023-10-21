@@ -45,8 +45,9 @@
     "mounts": [
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
-        "source=/dev/snd,target=/dev/snd,type=bind,consistency=cached",
-        "source=${env:HOME}/.Xauthority,target=/home/rosuser/.Xauthority,type=bind"
+        "source=/dev/snd,target=/dev/snd,type=bind,consistency=cached"
+        // UNCOMMENT for XAuthority
+        // ,"source=${env:HOME}/.Xauthority,target=/home/rosuser/.Xauthority,type=bind"
     ],
     "postCreateCommand": "rosdep update && rosdep install --from-paths src --ignore-src -y"
 }
